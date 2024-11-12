@@ -1,12 +1,14 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const studentRoutes = require('./routes/students'); // Import routes
+const path = require('path');
+const studentRoutes = require(path.join(__dirname, 'routes', 'students')); // Adjusted for debugging
 
 const app = express();
-app.use(express.json());
-app.use('/api/students', studentRoutes); // Use the route
-const cors = require('cors');
-app.use(cors());
+app.use('/students', studentRoutes);
+
+app.listen(5000, () => {
+  console.log('Server running on port 5000');
+});
+
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/schoolDB', { useNewUrlParser: true, useUnifiedTopology: true })
