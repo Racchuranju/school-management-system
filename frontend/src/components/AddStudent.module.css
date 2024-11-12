@@ -1,0 +1,37 @@
+/* AddStudent.module.css */
+
+.formContainer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formLabel {
+    font-weight: bold;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.submitBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
