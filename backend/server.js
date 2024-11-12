@@ -1,3 +1,5 @@
+import students from './routes/students.js';
+const students = require('./routes/students'); // If students.js is in the routes folder
 const express = require('express');
 const path = require('path');
 const studentRoutes = require(path.join(__dirname, 'routes', 'students')); // Adjusted for debugging
