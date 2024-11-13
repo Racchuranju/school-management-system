@@ -2,7 +2,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const students = require('./routes/students');  // Only once
-
+const mongoURI = process.env.MONGO_URI;
 const app = express();
 
 // Middleware to parse incoming JSON data
